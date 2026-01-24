@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#6A3EFF">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://happywrap.store/">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/happy_logo.png">
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    
+    <title>HappyWrap — Premium Gift Wrapping for Every Occasion</title>
+    <meta name="description" content="Custom gifts curated from reliable Pakistani sellers. Something expensive for your heart, not your wallet.">
+    
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="HappyWrap — Premium Gift Wrapping for Every Occasion">
+    <meta property="og:description" content="Custom gifts curated from reliable Pakistani sellers. Something expensive for your heart, not your wallet.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://happywrap.store/">
+    <meta property="og:site_name" content="HappyWrap">
+    <meta property="og:image" content="/images/happy_wraplogo.jpg">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "HappyWrap",
+      "url": "https://happywrap.store",
+      "logo": "https://happywrap.store/images/happy_logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "support@happywrap.store",
+        "contactType": "Customer Service"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "KB Colony Street 1",
+        "addressLocality": "Lahore",
+        "addressCountry": "PK"
+      }
+    }
+    </script>
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HappyWrap — Premium Gift Wrapping for Every Occasion">
+    <meta name="twitter:description" content="Custom gifts curated from reliable Pakistani sellers. Something expensive for your heart, not your wallet.">
+    <meta name="twitter:image" content="/images/happy_wraplogo.jpg">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>🎁 HappyWrap</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="box.html">Cart <span class="box-count" id="boxCount">0</span></a></li>
+                <li><a href="login.html" id="navAuthLink">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slideshow">
+            <div class="hero-slide" style="background-image: url('/images/card_lamplights.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('/images/card_flowerpots.jpg');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2>Something expensive for your heart, not your wallet</h2>
+            <p class="hero-description">Custom gifts curated from reliable Pakistani sellers, proudly in Lahore</p>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="shop.html" class="btn btn-primary">Shop Gifts</a>
+                <a href="about.html" class="btn btn-outline" style="border-color: white; color: white;">Our Story</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Philosophy -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">Our Philosophy</h2>
+                <p class="section-description">We believe in gifts that mean something.</p>
+            </div>
+            
+            <div class="philosophy-grid">
+                <div class="philosophy-card">
+                    <span class="philosophy-icon">❤️</span>
+                    <h3>Heart over Wallet</h3>
+                    <p>We believe the best gifts aren't the most expensive ones, but the ones that show you care. We curate items that feel luxurious and special without breaking the bank.</p>
+                </div>
+                <div class="philosophy-card">
+                    <span class="philosophy-icon">✨</span>
+                    <h3>Curated over Mass-produced</h3>
+                    <p>Instead of offering thousands of generic items, we hand-pick a select few. Every item in our store is there because we believe it brings genuine joy and beauty.</p>
+                </div>
+                <div class="philosophy-card">
+                    <span class="philosophy-icon">🇵🇰</span>
+                    <h3>Lahore Roots</h3>
+                    <p>Proudly based in Lahore, we work with reliable local sources to bring you quality you can trust. We are part of your community, not a faceless corporation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Authenticity Section -->
+    <section class="about-section" style="padding-top: 0;">
+        <div class="container">
+            <div class="authenticity-box">
+                <h2 style="margin-bottom: 20px;">Authenticity & Trust</h2>
+                <p style="font-size: 1.1rem; line-height: 1.8; color: var(--dark); max-width: 800px; margin: 0 auto;">
+                    At HappyWrap, we don't claim to make everything by hand, but we do promise that every item is inspected, packed, and delivered with personal care. We source our products from trusted partners in Pakistan, ensuring that what you see is exactly what you get. Our goal is reliability—delivering happiness to your doorstep, every single time.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-creations">
+        <div class="container">
+            <h2 class="section-title">Featured Creations</h2>
+            <div class="featured-grid">
+                <a href="shop.html" class="creation-card">
+                    <img src="images/black_mugs.jpeg" alt="Simple Mugs" class="creation-image">
+                    <div class="creation-info">
+                        <h3 class="creation-title">Simple Mugs</h3>
+                    </div>
+                </a>
+                <a href="shop.html" class="creation-card">
+                    <img src="images/card_lamplights.jpg" alt="Lamp Lights" class="creation-image">
+                    <div class="creation-info">
+                        <h3 class="creation-title">Lamp Lights</h3>
+                    </div>
+                </a>
+                <a href="shop.html" class="creation-card">
+                    <img src="images/card_butterflyrings.jpg" alt="Rings" class="creation-image">
+                    <div class="creation-info">
+                        <h3 class="creation-title">Butterfly Rings</h3>
+                    </div>
+                </a>
+            </div>
+            <div style="margin-top: 40px;">
+                <a href="shop.html" class="btn btn-primary">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Q&A Section -->
+    <section class="qa-section">
+        <div class="container">
+            <h2 class="section-title">Questions & Answers</h2>
+            <p class="section-description">Have a question? Ask our community!</p>
+            
+            <!-- Submit Question Form -->
+            <div class="qa-submit-box">
+                <h3>Ask a Question</h3>
+                <form id="qaForm" name="general-questions" method="POST" netlify>
+                    <input type="hidden" name="form-name" value="general-questions">
+                    <div class="form-group">
+                        <input type="text" id="qaName" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="qaQuestion" name="question" placeholder="Type your question here..." rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Question</button>
+                </form>
+            </div>
+
+            <!-- Display Questions -->
+            <div class="qa-list">
+                <h3>Community Questions</h3>
+                <div id="questionsList">
+                    <div class="qa-item">
+                        <div class="qa-question">
+                            <strong>Sarah M.</strong>
+                            <p>Do you offer international shipping?</p>
+                            <span class="qa-date">2 days ago</span>
+                        </div>
+                        <div class="qa-answer">
+                            <strong>HappyWrap Team:</strong>
+                            <p>Yes! We ship to most countries worldwide. Shipping costs and delivery times vary by location.</p>
+                        </div>
+                    </div>
+                    <div class="qa-item">
+                        <div class="qa-question">
+                            <strong>John D.</strong>
+                            <p>What is your return policy?</p>
+                            <span class="qa-date">5 days ago</span>
+                        </div>
+                        <div class="qa-answer">
+                            <strong>HappyWrap Team:</strong>
+                            <p>We offer a 30-day return policy on most items. Products must be in original condition with tags attached.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Display Global Product Questions Section -->
+            <div class="qa-list" style="margin-top: 60px;">
+                <h3>Product Questions from Community</h3>
+                <div id="globalProductQuestionsList"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section" style="display: flex; flex-direction: column; align-items: flex-start;">
+                    <!-- Company Logo -->
+                    <div class="footer-logo" style="margin-bottom: 15px;">
+                         <img src="/images/happy_wraplogo.jpg" alt="HappyWrap" style="max-width: 150px; border-radius: 8px;">
+                    </div>
+                    
+                    <!-- Social Icons -->
+                    <div class="social-icons" style="display: flex; gap: 15px; margin-top: 10px;">
+                        <a href="https://instagram.com/happywrap.store" target="_blank" aria-label="Instagram" style="text-decoration: none;">
+                            <img src="/images/instagram_logo.jpeg" alt="Instagram" width="24" height="24" style="border-radius: 4px;">
+                        </a>
+                        <a href="https://www.facebook.com/share/16wqK2a6hZ/" target="_blank" aria-label="Facebook" style="text-decoration: none;">
+                            <!-- Simple Facebook SVG Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                <path d="M12 0C5.373 0 0 5.373 0 12c0 6.016 4.432 10.984 10.206 11.852V15.18H7.237v-3.154h2.969V9.69c0-2.917 1.73-4.516 4.374-4.516 1.267 0 2.593.226 2.593.226v2.853h-1.462c-1.44 0-1.889.893-1.889 1.81v2.172h3.213l-.513 3.154h-2.7V23.852C19.568 22.984 24 18.016 24 12c0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://x.com/Store_Happywrap" target="_blank" aria-label="X (Twitter)" style="text-decoration: none;">
+                            <!-- Simple X/Twitter SVG Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <p style="font-weight: bold; font-size: 1.1em; color: white;">HappyWrap — Custom Gifts & Packaging</p>
+                    <p>Designed & curated in Lahore, Pakistan</p>
+                    <p>Owner: Muneeb Ali</p>
+                    <p>Email: support@happywrap.store</p>
+                    <p>Address: KB Colony Street 1, Lahore, Pakistan</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="terms.html">Terms</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Terms Modal (First Visit) -->
+    <div id="termsModal" class="modal">
+        <div class="modal-content">
+            <h2>Welcome to HappyWrap!</h2>
+            <p>Before you continue, please review our terms and conditions.</p>
+            <div class="modal-actions">
+                <a href="terms.html" class="btn btn-secondary">Read Terms & Conditions</a>
+                <button id="acceptTerms" class="btn btn-primary">Accept & Continue</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Instagram Chat Button -->
+    <!-- Instagram Chat Button -->
+    <a href="https://ig.me/m/happywrap.store" target="_blank" class="instagram-btn" aria-label="Chat on Instagram">
+        <img src="/images/instagram_logo.jpeg" alt="Instagram">
+        <span>Chat with us</span>
+    </a>
+
+    <script src="main.js"></script>
+    <script>
+        // Check if user has visited before
+        window.addEventListener('DOMContentLoaded', () => {
+            const hasVisited = localStorage.getItem('hasVisitedHappyWrap');
+            if (!hasVisited) {
+                document.getElementById('termsModal').style.display = 'flex';
+            }
+
+            // Handle terms acceptance
+            document.getElementById('acceptTerms').addEventListener('click', () => {
+                localStorage.setItem('hasVisitedHappyWrap', 'true');
+                document.getElementById('termsModal').style.display = 'none';
+            });
+
+            // Handle Q&A form submission
+            document.getElementById('qaForm').addEventListener('submit', async (e) => {
+                e.preventDefault();
+                
+                const customUserData = localStorage.getItem('custom_user_data');
+                const user = window.netlifyIdentity ? netlifyIdentity.currentUser() : null;
+                if (!user && !customUserData) {
+                    showNotification(
+                        'Authentication Required',
+                        'Only authenticated users can submit questions',
+                        'warning'
+                    );
+                    setTimeout(() => {
+                        window.location.href = 'login.html';
+                    }, 2000);
+                    return;
+                }
+                
+                const userEmail = user ? user.email : JSON.parse(customUserData).email;
+                const userName = document.getElementById('qaName').value;
+                const questionText = document.getElementById('qaQuestion').value;
+                
+                // Submit to Netlify Forms (for email notifications)
+                const formData = new FormData(e.target);
+                fetch('/', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: new URLSearchParams(formData).toString()
+                }).catch(err => console.error('Netlify form submission failed:', err));
+
+                const questionData = {
+                    productId: 'community',
+                    productName: 'Community Question',
+                    userName: userName,
+                    question: questionText,
+                    userEmail: userEmail,
+                    date: new Date().toISOString()
+                };
+                
+                try {
+                    const response = await fetch('/api/store-questions', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(questionData)
+                    });
+                    
+                    if (response.ok) {
+                        showNotification(
+                            'Question Submitted!',
+                            'Your question will be reviewed and displayed here soon.',
+                            'success'
+                        );
+                        e.target.reset();
+                        // Reload questions after a short delay to allow for propagation
+                        setTimeout(loadGlobalQuestions, 1000);
+                    } else {
+                        const errorData = await response.json();
+                        throw new Error(errorData.details || errorData.error || 'Failed to store question');
+                    }
+                } catch (error) {
+                    console.error('Error submitting question:', error);
+                    showNotification(
+                        'Error',
+                        error.message || 'There was an error submitting your question. Please try again.',
+                        'error'
+                    );
+                }
+            });
+            
+            // Load global questions
+            loadGlobalQuestions();
+            loadGlobalProductQuestions();
+        });
+        
+        // Function to load global questions
+        async function loadGlobalQuestions() {
+            const questionsList = document.getElementById('questionsList');
+            if (!questionsList) return;
+            
+            try {
+                const response = await fetch('/api/get-questions?productId=community');
+                const data = await response.json();
+                
+                if (data.success && data.questions && data.questions.length > 0) {
+                    const questionsHTML = data.questions.slice(0, 10).map(q => {
+                        const date = new Date(q.date);
+                        const timeAgo = getTimeAgo(date);
+                        return `
+                            <div class="qa-item">
+                                <div class="qa-question">
+                                    <strong>${q.userName}</strong>
+                                    <p>${q.question}</p>
+                                    <span class="qa-date">${timeAgo}</span>
+                                </div>
+                                ${q.answer ? `
+                                    <div class="qa-answer">
+                                        <strong>HappyWrap Team:</strong>
+                                        <p>${q.answer}</p>
+                                    </div>
+                                ` : `
+                                    <div class="qa-answer" style="background: #fef3c7; padding: 15px; border-radius: 8px; border-left: 3px solid #f59e0b;">
+                                        <strong style="color: #92400e;">HappyWrap Team:</strong>
+                                        <p style="color: #92400e; margin: 5px 0 0 0;">Thank you for your question! Our team will respond soon.</p>
+                                    </div>
+                                `}
+                            </div>
+                        `;
+                    }).join('');
+                    
+                    questionsList.innerHTML = questionsHTML;
+                } else {
+                    questionsList.innerHTML = '<p style="text-align: center; color: var(--gray); padding: 20px;">No community questions yet. Be the first to ask!</p>';
+                }
+            } catch (error) {
+                console.error('Error loading community questions:', error);
+                questionsList.innerHTML = '<p style="text-align: center; color: var(--gray); padding: 20px;">Error loading questions.</p>';
+            }
+        }
+        
+        // Function to load global product questions
+        async function loadGlobalProductQuestions() {
+            const questionsList = document.getElementById('globalProductQuestionsList');
+            if (!questionsList) return;
+            
+            try {
+                const response = await fetch('/api/get-questions');
+                const data = await response.json();
+                
+                if (data.success && data.questions && data.questions.length > 0) {
+                    const questionsHTML = data.questions.slice(0, 5).map(q => {
+                        const date = new Date(q.date);
+                        const timeAgo = getTimeAgo(date);
+                        return `
+                            <div class="qa-item">
+                                <div class="qa-question">
+                                    <strong>${q.userName}</strong>
+                                    <p>${q.question}</p>
+                                    <span class="qa-date">${timeAgo}</span>
+                                </div>
+                                ${q.answer ? `
+                                    <div class="qa-answer">
+                                        <strong>HappyWrap Team:</strong>
+                                        <p>${q.answer}</p>
+                                    </div>
+                                ` : `
+                                    <div class="qa-answer" style="background: #fef3c7; padding: 15px; border-radius: 8px; border-left: 3px solid #f59e0b;">
+                                        <strong style="color: #92400e;">HappyWrap Team:</strong>
+                                        <p style="color: #92400e; margin: 5px 0 0 0;">Thank you for your question! Our team will respond soon.</p>
+                                    </div>
+                                `}
+                            </div>
+                        `;
+                    }).join('');
+                    
+                    questionsList.innerHTML = questionsHTML;
+                } else {
+                    questionsList.innerHTML = '<p style="text-align: center; color: var(--gray); padding: 20px;">No product questions yet. Ask a question on any product page!</p>';
+                }
+            } catch (error) {
+                console.error('Error loading questions:', error);
+                questionsList.innerHTML = '<p style="text-align: center; color: var(--gray); padding: 20px;">Error loading questions.</p>';
+            }
+        }
+        
+        function getTimeAgo(date) {
+            const seconds = Math.floor((new Date() - date) / 1000);
+            
+            let interval = seconds / 31536000;
+            if (interval > 1) return Math.floor(interval) + ' year' + (Math.floor(interval) > 1 ? 's' : '') + ' ago';
+            
+            interval = seconds / 2592000;
+            if (interval > 1) return Math.floor(interval) + ' month' + (Math.floor(interval) > 1 ? 's' : '') + ' ago';
+            
+            interval = seconds / 86400;
+            if (interval > 1) return Math.floor(interval) + ' day' + (Math.floor(interval) > 1 ? 's' : '') + ' ago';
+            
+            interval = seconds / 3600;
+            if (interval > 1) return Math.floor(interval) + ' hour' + (Math.floor(interval) > 1 ? 's' : '') + ' ago';
+            
+            interval = seconds / 60;
+            if (interval > 1) return Math.floor(interval) + ' minute' + (Math.floor(interval) > 1 ? 's' : '') + ' ago';
+            
+            return 'Just now';
+        }
+    </script>
+</body>
+</html>
